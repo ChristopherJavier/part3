@@ -1,0 +1,13 @@
+GET http://localhost:3001/api
+####
+DELETE  http://localhost:3001/api/notes/5
+###
+GET  http://localhost:3001/api/notes/9
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "VS Code REST Client is good as POSTMAN",
+    "important": true
+}
