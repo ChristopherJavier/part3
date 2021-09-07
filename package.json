@@ -9,6 +9,7 @@
     "build:ui": "rm -rf build && cd ../part2-notes/ && npm run build --prod && cp -r build ../notes-backend",
     "deploy": "git push heroku main",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
+    "lint": "eslint .",
     "logs:prod": "heroku logs --tail",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +22,7 @@
     "mongoose": "^6.0.4"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "nodemon": "^2.0.12"
   }
 }
