@@ -1,4 +1,5 @@
+all_request.rest
+.eslintrc.js
 node_modules
 .env
-all_request.rest
-eslintrc.js
+.gitignore
